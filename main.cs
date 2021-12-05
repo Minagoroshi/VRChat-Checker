@@ -169,7 +169,7 @@ namespace VRChat_Checker
                                 embed.Title = Trust;
                                 embed.Timestamp = DateTime.Now;
                                 embed.Color = Color.Red; //alpha will be ignored, you can use any RGB color
-                                                         //embed.Image = new EmbedMedia() { Url = "https://www.youtube.com/embed/XiBnFNtYMYk?controls=0", Width = 560, Height = 315 }; //valid for thumb and video
+                                //embed.Image = new EmbedMedia() { Url = "https://www.youtube.com/embed/XiBnFNtYMYk?controls=0", Width = 560, Height = 315 }; //valid for thumb and video
                                 embed.Author = new EmbedAuthor() { Name = displayname, Url = "https://vrchat.com/home/user/" + id, IconUrl = avatarURL };
                                 //fields
                                 embed.Fields = new List<EmbedField>();

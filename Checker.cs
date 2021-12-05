@@ -19,7 +19,7 @@ namespace TopLib
 
     public static void Init()
     {
-      Console.Title = configuration.nameChecker + " " + configuration.versionChecker + " | From the Eternity Dev Team";
+      Console.Title = configuration.nameChecker + " " + configuration.versionChecker + " | Eternity Dev Team";
       Variables.ComboList = Checker.upload.Combo();
       Variables.ComboLenght = Variables.ComboList.Count<string>();
       if (configuration.Useproxy)
@@ -61,7 +61,7 @@ namespace TopLib
     {
       Checker.CPM = Checker.Increment_CPM;
       Checker.Increment_CPM = 0;
-      Console.Title = configuration.nameChecker + " " + configuration.versionChecker + " by " + configuration.Coder + " | (" + Variables.Progress.ToString() + "/" + Variables.ComboLenght.ToString() + ") | Hits: " + Variables.Hits.ToString() + " - Fails: " + Variables.Fails.ToString() + " - 2FA: " + Variables.Fac2.ToString() + " - Retries: " + Variables.Retries.ToString() + " - CPM: " + (Checker.CPM * 60).ToString() + " - Elapsed: " + Checker.GetElapsed() + " | By Top ";
+      Console.Title = configuration.nameChecker + " " + configuration.versionChecker + " by " + configuration.Coder + " | (" + Variables.Progress.ToString() + "/" + Variables.ComboLenght.ToString() + ") | Hits: " + Variables.Hits.ToString() + " - Fails: " + Variables.Fails.ToString() + " - 2FA: " + Variables.Fac2.ToString() + " - Retries: " + Variables.Retries.ToString() + " - CPM: " + (Checker.CPM * 60).ToString() + " - Elapsed: " + Checker.GetElapsed();
       Thread.Sleep(1000);
     }
 
